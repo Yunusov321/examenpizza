@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+
+        <div class="div1">
+            <img src="img/photo_2025-04-30_16-03-51.jpg" alt="" style="width: 200px;">
+            <div>
+                <button class="button1" id="totalPrice">0 ₽</button>
+                <a href="cart.html">
+                    <button class="button2">
+                        🛒 <span id="cartCount">0</span>
+                    </button>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div class="div2">
+            <div>
+            <button class="button">Все</button>
+            <button class="button">Мясные</button>
+            <button class="button3">Вегетарианская</button>
+            <button class="button">Гриль</button>
+            <button class="button">Острые</button>
+            <button class="button">Закрытые</button>                
+            </div>
+
+            <select id="sortSelect">
+                <option value="">Сортировка по:</option>
+                <option value="price">По цене</option>
+                <option value="name">По алфавиту</option>
+            </select>
+        </div>
+    </section>
+
+    <section>
+        <div>
+            <h1 class="h11">Все пиццы</h1>
+        </div>
+    </section>
+
+    <section>
+        <div class="div3">
+            <div id="all-pizzas"></div>
+            <div id="pizza-details"></div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+    <script src="reactpizza.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styel1.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="img/photo_2025-04-30_16-03-51.jpg" alt="">
+      <h1>🛒 Корзина</h1>
+      <button onclick="clearCart()" class="button1">🗑 Очистить корзину</button>
+    </header>
+
+    <section id="cart-container">
+      <div class="cart-item">
+        <div class="item-left">
+          <img src="https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/8e034245-86dc-4721-bf89-777b8f7b9741.jpg" alt="Сырный цыпленок">
+          <div class="item-details">
+            <strong>Сырный цыпленок</strong>
+            <span>тонкое тесто, 26 см.</span>
+          </div>
+        </div>
+        <div class="item-middle">
+          <button class="counter-btn">−</button>
+          <div>2</div>
+          <button class="counter-btn">+</button>
+        </div>
+        <div class="item-price">770 ₽</div>
+        <button class="remove-btn">×</button>
+      </div>
+
+      <!-- Еще товары можно добавлять через JS -->
+    </section>
+
+    <div class="summary">
+      <div>Всего пицц: <span id="total-count">3</span> шт.</div>
+      <div>Сумма заказа: <span id="total">900 ₽</span></div>
+    </div>
+
+    <button class="pay-btn">Оплатить сейчас</button>
+  </div>
+
+    <script src="script1.js"></script>
+</body>
+</html>
